@@ -39,6 +39,7 @@ public class Calculator : MonoBehaviour {
 				case "/":
 				case "*":
 				case "=":
+               
 				Calculate(s);
 				break;
 			case "ce":
@@ -105,6 +106,8 @@ public class Calculator : MonoBehaviour {
 			case "/":
 				result = x / y;
 				break;
+            
+            
 		}
 
 		return result;
