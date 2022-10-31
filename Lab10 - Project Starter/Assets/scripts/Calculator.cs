@@ -39,6 +39,8 @@ public class Calculator : MonoBehaviour {
 				case "/":
 				case "*":
 				case "=":
+                case "sqrt":
+                case "power":
                
 				Calculate(s);
 				break;
@@ -92,7 +94,7 @@ public class Calculator : MonoBehaviour {
 	//Return the result of an operation between 2 floats
 	public static float CalculatePair(float x, float y, string op) {
 		float result = 0.0f;
-
+         
 		switch (op) {
 			case "+":
 				result = x + y;
@@ -106,8 +108,12 @@ public class Calculator : MonoBehaviour {
 			case "/":
 				result = x / y;
 				break;
-            
-            
+
+
+
+            case "power":
+                result = (x * y) * (x * y);
+                break;
 		}
 
 		return result;
