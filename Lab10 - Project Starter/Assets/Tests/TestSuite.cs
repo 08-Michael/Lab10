@@ -73,5 +73,37 @@ namespace Tests
             result = Calculator.CalculatePair(5, 2, "/");
             Assert.AreEqual(result, 2.5);
         }
+
+        [Test]
+        public void TestSquareRoot()
+        {
+            result = Calculator.CalculatePair(5, 2, "sqrt");
+            Assert.AreEqual(result, 4);
+        }
+
+        [UnityTest]
+        public IEnumerator TestUnitySquareRoot()
+        {
+            yield return null;
+
+            result = Calculator.CalculatePair(5, 2, "sqrt");
+            Assert.AreEqual(result, 4);
+        }
+
+        [Test]
+        public void TestPower()
+        {
+            result = Calculator.CalculatePair(5, 2, "^");
+            Assert.AreEqual(result, 25);
+        }
+
+        [UnityTest]
+        public IEnumerator TestUnityPower()
+        {
+            yield return null;
+
+            result = Calculator.CalculatePair(5, 2, "^");
+            Assert.AreEqual(result, 25);
+        }
     }
 }
