@@ -112,7 +112,7 @@ public class Calculator : MonoBehaviour {
 
 
             case "power":
-                result = (x * y) * (x * y);
+                result = (x * y) + (x * y) + (x * y);
                 break;
 		}
 
