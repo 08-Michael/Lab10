@@ -108,11 +108,11 @@ public class Calculator : MonoBehaviour {
 			case "/":
 				result = x / y;
 				break;
-
-
-
-            case "power":
-                result = (x * y) + (x * y) + (x * y);
+			case "sqrt":
+				result = Mathf.Sqrt(x * y);
+				break;
+			case "power":
+				result = Mathf.Pow(x, y);
                 break;
 		}
 
